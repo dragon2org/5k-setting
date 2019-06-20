@@ -4,6 +4,8 @@
 
 - [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 
+截图使用的版本 `5.4.4.0` 低版本可能不带 `kext安装` 功能，建议[官网](https://mackie100projects.altervista.org/download-clover-configurator/)安装最新版本。
+
 ## 开始
 
 安装必须驱动
@@ -38,3 +40,13 @@
 ![完成](./step6.png)
 
 保存配置文件，并重启电脑。
+
+### 其他
+
+1. 设置完成还不是5k
+
+确保显示器设置在5k输入模式。
+
+步骤:
+
+显示器菜单键->进入显示器主菜单->输入(信号源)->选中5k
