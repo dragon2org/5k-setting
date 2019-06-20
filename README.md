@@ -3,9 +3,10 @@
 ## 所需工具
 
 - [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
-- [Hackintool](http://headsoft.com.au/download/mac/Hackintool.zip)
 
 ## 开始
+
+安装必须驱动
 
 - Lilu.kext
 - WhateverGreen.kext 
