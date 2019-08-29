@@ -29,13 +29,13 @@ clover 增加启动参数
 
 ## FAQ
 
-1. 如何挂载`EFI`分区
+### 1. 如何挂载`EFI`分区
 
 [Clover Configurator 下载地址](https://mackie100projects.altervista.org/download-clover-configurator/)
 
 ![使用clover Configurator挂载EFI分区](./step1.png)
 
-2. 怎么安装`kext`
+### 2. 怎么安装`kext`
 
 - 挂载EFI盘
 - 将下载的 **.kext 放在 `CLOVER/kexts/Other`
@@ -45,10 +45,10 @@ clover 增加启动参数
 
 ![Kexts安装功能](./step2.png)
 
-3. 更新 `Lilu.kext` 不能启动怎么办？
+### 3. 更新 `Lilu.kext` 不能启动怎么办？
 
 [Clover使用教程](https://blog.daliansky.net/clover-user-manual.html)
 
-4. 安装`kext`并且增加了`启动参数`还不是5k?
+### 4. 安装`kext`并且增加了`启动参数`还不是5k?
 
 其他 `kext` 产生冲突
