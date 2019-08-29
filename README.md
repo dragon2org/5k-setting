@@ -1,52 +1,54 @@
 # 黑苹果启用 5k显示/ 解决多dp 5k显示器识别成多个显示器
 
-## 所需工具
+## 核心
 
-- [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
+安装必须 `kext` ,已安装直接进入下一步。
 
-截图使用的版本 `5.4.4.0` 低版本可能不带 `kext安装` 功能，建议[官网](https://mackie100projects.altervista.org/download-clover-configurator/)安装最新版本。
+- [Lilu.kext](https://github.com/acidanthera/Lilu/releases)  版本:1.35 以上
+- [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) 版本:1.28 以上
 
-## 开始
+**注意: 使用新LiLu.kext 可能造成依赖Lilu.kext的kext不能正常工作，导致不能进入系统。包含不仅限于(AppleALC.kext)**
 
-安装必须驱动
+clover 增加启动参数
 
-- Lilu.kext
-- WhateverGreen.kext 
+```bash
+# Boot 下新增 agdpmod=pikera
+<key>Arguments</key>
+<string>agdpmod=pikera</string>
 
-### 1.打开 *Clover Configurator* ,挂载 *Clover* 所在的 *EFI* 分区
+#比如你原来是
+<key>Arguments</key>
+<string>-v</string>
 
-![步骤一](./step1.png)
+#那么最后结果就是
+<key>Arguments</key>
+<string>-v agdpmod=pikera</string>
+```
 
-### 2. 安装 kext
+重启之后就是5k了。
 
-![步骤二](./step2.png)
+## FAQ
 
-### 3.增加 5k 启动参数
+1. 如何挂载`EFI`分区
 
-- 打开 *访达*
-- shift + Comand + G 
-- 输入 /Volumes/EFI/EFI/CLOVER/ 进入 clover 安装目录
+[Clover Configurator 下载地址](https://mackie100projects.altervista.org/download-clover-configurator/)
 
-![步骤三](./step3.png)
+![使用clover Configurator挂载EFI分区](./step1.png)
 
-![步骤四](./step4.png)
+2. 怎么安装`kext`
 
-鼠标右键点击 `Boot Arguments` 空白处，如图操作，增加5K启动参数
+- 挂载EFI盘
+- 将下载的 **.kext 放在 `CLOVER/kexts/Other`
 
-![步骤五](./step5.png)
+或者直接使用 [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
+的 `Kexts` 安装
 
-完成操作之后，`Boot Arguments` 多一条 `agdpmod=pikera`。
+![Kexts安装功能](./step2.png)
 
-![完成](./step6.png)
+3. 更新 `Lilu.kext` 不能启动怎么办？
 
-保存配置文件，并重启电脑。
+[Clover使用教程](https://blog.daliansky.net/clover-user-manual.html)
 
-### 其他
+4. 安装`kext`并且增加了`启动参数`还不是5k?
 
-1. 设置完成还不是5k
-
-确保显示器设置在5k输入模式。
-
-步骤:
-
-显示器菜单键->进入显示器主菜单->输入(信号源)->选中5k
+其他 `kext` 产生冲突
