@@ -1,5 +1,13 @@
 # 黑苹果启用 5k显示/ 解决多dp 5k显示器识别成多个显示器
 
+## **如果你是淘宝/闲鱼代装的系统，大概率无效或者使用了无法启动系统**
+
+淘宝/闲鱼系统安装服务，大多为了快速，系统内充斥各种无用 `kext` 导致驱动5k的 `kext` 无法正常工作, 建议安装原版系统。
+
+- [10.14 原版镜像安装教程](https://www.tonymacx86.com/threads/-unibeast-install-macos-mojave-on-any-supported-intel-based-pc.259381/)
+- [10.13 原版镜像安装教程](https://www.tonymacx86.com/threads/unibeast-install-macos-high-sierra-on-any-supported-intel-based-pc.235474/)
+- [国内原版镜像下载地址](https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=mac%2010.14%20dmg&oq=mac%252010.14%2520%25E9%2595%259C%25E5%2583%258F&rsv_pq=ac91341900040aee&rsv_t=b2d1flfCfmEB3Y%2FPx8xoSGuVX%2BpR6F%2FrImLxbA%2By%2BQp6KUDfP0wVCWyVymw&rqlang=cn&rsv_enter=1&rsv_dl=tb&inputT=1578&rsv_sug3=35&rsv_sug1=19&rsv_sug7=000&rsv_sug2=0&rsv_sug4=2504&rsv_sug=2)
+
 ## 核心
 
 安装必须 `kext` ,已安装直接进入下一步。
